@@ -18,7 +18,7 @@
 <div class="card">
 <h2>Welcome <p>Track, Control & Improve yourself.</p></h2>
 
-<img src="assets/banner.jpeg" width=100%" />
+<img src="https://github.com/Maxmentor/musterbate-track/blob/main/assets/banner.jpeg?raw=true" width=100%" />
 </div>
 </div>
 <footer class="site-footer">
@@ -26,4 +26,5 @@
 </footer>
 
 </body>
+
 </html>
