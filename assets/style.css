@@ -1,0 +1,247 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background:#f4f6fb;
+  color:#333;
+  min-height:100vh;
+}
+
+/* =====================
+   HEADER / NAVBAR
+===================== */
+.header{
+  background:#ffffff;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.header h1{
+  font-size:22px;
+  color:#2c3e50;
+}
+
+.nav a{
+  text-decoration:none;
+  margin-left:20px;
+  color:#3498db;
+  font-weight:500;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+/* =====================
+   CARD DESIGN
+===================== */
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:25px;
+  margin-bottom:30px;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08),
+    0 4px 10px rgba(0,0,0,0.05);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.12),
+    0 6px 15px rgba(0,0,0,0.08);
+}
+
+.card h2{
+  margin-bottom:20px;
+  color:#2c3e50;
+  font-size:20px;
+}
+
+/* =====================
+   FORM ELEMENTS
+===================== */
+form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+form textarea,
+form select,
+form input{
+  width:100%;
+  padding:12px 15px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:15px;
+  transition:.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+  outline:none;
+  border-color:#3498db;
+  box-shadow:0 0 0 3px rgba(52,152,219,0.2);
+}
+
+form textarea{
+  resize:none;
+  min-height:100px;
+  grid-column:span 2;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button{
+  grid-column:span 2;
+  padding:14px;
+  background:linear-gradient(135deg,#3498db,#6dd5fa);
+  border:none;
+  color:#fff;
+  font-size:16px;
+  font-weight:600;
+  border-radius:12px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  opacity:.9;
+  transform:translateY(-1px);
+}
+
+/* =====================
+   TABLE (DATA LIST)
+===================== */
+.table-box{
+  overflow-x:auto;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+
+table th{
+  background:#3498db;
+  color:#fff;
+  padding:14px;
+  text-align:left;
+}
+
+table td{
+  padding:12px;
+  border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+  background:#f9fbff;
+}
+
+/* =====================
+   EDIT BUTTON
+===================== */
+.edit-btn{
+  text-decoration:none;
+  padding:6px 14px;
+  border-radius:8px;
+  background:#f39c12;
+  color:#fff;
+  font-size:14px;
+}
+
+/* =====================
+   REPORT LINKS
+===================== */
+.report-links a{
+  display:inline-block;
+  padding:10px 16px;
+  margin-right:10px;
+  background:#2ecc71;
+  color:#fff;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:500;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   LOGIN / REGISTER CARD
+===================== */
+.auth-card{
+  max-width:420px;
+  margin:80px auto;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background: #1a1a1a; /* dark background */
+    color: #f0f0f0; /* light text */
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    position: fixed; /* footer at bottom if needed */
+    bottom: 0;
+}
+
+footer a {
+    color: #4da6ff; /* link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #80c1ff; /* hover color */
+    transform: translateY(-2px);
+}
+
+
+
+.delete-btn {
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: #a3190f;
+    color: #fff;
+    font-size: 14px;
+}
+.delete-btn:hover{
+  background:#c0392b;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media(max-width:768px){
+  form{
+    grid-template-columns:1fr;
+  }
+
+  button{
+    grid-column:span 1;
+  }
+}
